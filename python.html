@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Python</title>
+  <style>
+  body{
+  margin: 0px;
+}
+  p{
+    margin:5px;
+  }
+  h2{
+    margin: 3px;
+  }
+  h4{
+    margin: 3px;
+  }
+  h3{
+    margin: 3px;
+  }
+#boxA{
+  text-align:center;
+  font-size: 23px;
+  margin-bottom: 80px;
+}
+
+#mk_ponto{
+  background: none;
+}
+#boxT{
+  color: red;
+  margin:10px;
+  
+}
+#cabeca{
+  background: #126787;
+}
+  .box_ide{
+    background: black;
+    color: red;
+    width: 96%;
+    margin-left: 5px;
+    border: 3px solid #345677;
+  }
+  .anotacao{
+    border: 3px solid blue;
+    margin:10px;
+    background: #125477;
+    color: white;
+  }
+  .coment{
+    background: none;
+    color: green;
+  }
+  .box_run{
+    background: black;
+    color: white;
+    margin: 10px;
+    border: 3px solid #345677;
+  }
+  
+#and2{
+  background: #126787;
+  margin-top: 20px;
+  text-align: center;
+}
+  .tema{
+    margin-top: 40px;
+  }
+  
+  .rs{
+    width: 96%;
+    height: 70px;
+    background: silver;
+    margin-top: 15px;
+    margin-left: 8px;
+    font-size: 19px;
+    border-radius: 15px;
+  }	
+  .img_rs{
+    width: 80px;
+    height: 80px;
+    background: #126787;
+    border-radius: 30px;
+  }
+  .L2{
+    display: inline-block;
+    margin-bottom: 30px;
+    float:right;
+    margin-right: 40px
+    
+  }
+  .btn{
+    margin: 20px;
+    width: 30%;
+    border-radius: 10px;
+  }
+  
+  .list_aula{
+    width: 50%;
+    height: 50px;;
+    background: red;
+    margin: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .li_py{
+    text-align: center;
+    margin:30px;
+  }
+  #py_hs{
+    display: none;
+  }
+  </style>
+</head>
+<body>
+  <div id="cabeca">
+    <hr>
+  <h1 id="boxT">
+    TECH<mark id="mk_ponto">.</mark><mark id="mk_buch">BUCH</mark>
+  </h1>
+    <hr>
+  </div>
+  <div class="rs">
+      
+      <img onclick="showhidden_py()"class="img_rs" class="L2" src="down2.png" />
+      <p class="L2">Aula 1</p>
+    </div>
+  <div id="py_hs">
+    <ul class="list_aula">
+      <li class="li_py">Aula 2 01/11/2023</li>
+    </ul>
+    
+  </div>
+  <script>
+  var div_l = document.getElementById("py_hs");
+  var display = 0;
+  
+  function showhidden_py(){
+    
+    if(display == 1){
+      div_l.style.display = "block";
+      display = 0;
+    }else{
+      div_l.style.display = "none";
+      display = 1;
+    }
+  }
+  </script>
+  <a href="instalacao.html" ><button class="btn" >Instalacao do Python!</button></a>
+  <div>
+    
+    <h2 class="tema">Programacao em python!</h2>
+    <h4>Aula 1
+      <h4>Introducao</h4>
+      <p>Programacao e o acto de dizer ao computador
+        em uma linguagem que ele intende para fazer algumas
+        instrucoes!
+      </p>
+      <p>Usaremos a linguagem python para programarr
+        softweres que sao aplicacoes em python!
+      </p>
+      <p>Tanto como python existe varias outras linguagems
+        tal como <u>java, javascript,lua e etc,</u>
+      </p>
+      <p>Mais a melhor escolha para comecar é a python serio
+        sendo uma linguagem muito abragente podemos
+        com ela criar aplicaoes do terminal, aplicacoes para disposectivos
+        moveis, IOS, desktop e Outros.
+      </p>
+      
+      
+    </h4>
+    <div class="tema">
+      <h3>Variaveis</h3>
+      <p>variaveis sao muitos importantes em 
+        qualquer linguagem de programacao tanto como
+        em python!
+      </p>
+      <p>É um nome que é reservado um espaco pelo
+        computador para receber dados!
+        
+      </p>
+      
+    </div>
+    <div class="box_ide">
+     <pre>
+      <code>
+      var = 123
+      
+      var2 = "ola"
+      var3 = 12,4
+      </code>
+     </pre>
+    </div>
+    
+    <p>Como visto o nome <b>var</b> e atribuido o valor 123 com o
+      simbolo de igual. Percebeu que os dados para cada 
+      variavel sao diferentes vamos Aprender os timpos de Variaveis
+      <div class="anotacao"> 
+        <pre>
+          <code>
+        <p > var = 123 &rarr; variavel numerica
+ var1 = "ola" &rarr; variavel de caracter
+ var2 = 12.4 &rarr; variavel numerica decimal</p>
+          </code>
+        </pre>
+      </div>
+      
+    </p>
+    <h3 class="tema">Primeiro Programa!</h3>
+    <p>Para terminar a aula vamos exibir um
+      "<b>ola mundo</b>" na tela do computador ou celular usando
+      a funcao print() do python
+      os caracteres devem estar dentro de aspas <code><b>"ola mundo!"</b></code>
+      para comtar em python digite primeiro # e depois
+      o comentario! <br>
+      <b>Nota:</b>  o Comentario nao é executado!
+      
+      
+    </p>
+  </div>
+  <div class="box_ide">
+    <pre>
+      <code>
+    print("ola mundo!")
+    <mark class="coment">#Essa é a funcao print()</mark>
+      </code>
+    </pre>
+  </div>
+  <p>Resultado:</p>
+  <div class="box_run">
+    <pre>
+      <code>
+        <p> ola mundo!
+ [Program finished]
+        </p>
+      </code>
+    </pre>
+    
+  </div>
+  
+  <p>Parabems terminaste com sucesso a sua primeira aula<br>
+    nos vemos na proxima aula <br>
+    A melhor forma de ser melhor é a 
+    pratica!.
+  </p>
+  
+  <div id="and2">
+    <hr>
+    <a href="perfil.html"<h4 class="id1"><u>Contate-nos!</u></h4></a>
+    <p class="id1">Mozambique,Chimoio aos 21/10/2023</p>
+    
+  </div>
+  <hr>
+      
+</body>
+</html>
